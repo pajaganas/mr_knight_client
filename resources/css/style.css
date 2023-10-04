@@ -1,0 +1,100 @@
+.Course, .Admission {
+    display: inline-block;
+    width: 48%;
+    margin: 0;
+    padding: 100px;
+    text-align: center;
+    font-size: large;
+    color: #fff;
+}
+
+
+.column {
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+
+}
+
+.Course {
+    background-image:  linear-gradient(rgba(18, 18, 61, 0.656) 26%, rgba(0, 213, 255, 0.433) 100%),url(../img/CourseIMG.jpg);
+    background-size: cover; /* Adjust the image size as needed */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center center;
+}
+
+.Admission {
+    background-image:  linear-gradient(rgba(19, 19, 60, 0.656) 26%, rgba(0, 213, 255, 0.433) 100%), url(../img/AdmissionIMG.jpg);
+    background-size: cover; /* Adjust the image size as needed */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-top: auto;
+}
+
+.footer {
+    background-color: rgb(88, 90, 87);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle; 
+
+}
+
+.Course p, .Admission p {
+    margin-top: 150px; /* Add space above the paragraph to lower it */
+    margin-bottom: 95px; /* Add space above the paragraph to lower it */
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.Course .button, .Admission .button {
+    margin-top: 20px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px; /* Add rounded edges to the buttons */
+    padding: 10px 20px; /* Padding for the buttons */
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.Course .button:hover, .Admission .button:hover {
+    background-color: #1e5799; /* New background color on hover */
+}
+
+@media (max-width: 768px) {
+    .column {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .Course, .Admission {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .Course h2, .Admission h2 {
+        font-size: 24px; /* Adjust font size for headings on small screens */
+    }
+
+    .Course p, .Admission p {
+        font-size: 14px; /* Adjust font size for paragraphs on small screens */
+    }
+
+    .Course .button, .Admission .button {
+        padding: 8px 16px; /* Adjust padding for buttons on small screens */
+    }
+}
+
