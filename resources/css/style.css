@@ -3,5 +3,18 @@
     height: 65px;
     filter: invert(100%);
   }
+
+
+  .news{
+
+    min-height: 100vh;
+    background-image: linear-gradient(#123d8278,#123d8278),url('../img/joys.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10vh;
+    
+    
+  }
   
   
