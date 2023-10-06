@@ -30,12 +30,7 @@
     background-position: center center;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-    margin-top: auto;
-}
+
 
 .footer {
     background-color: rgb(88, 90, 87);
